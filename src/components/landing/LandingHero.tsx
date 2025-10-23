@@ -20,7 +20,6 @@ const LandingHero = () => {
   // Branding dinâmico com fallback para o nome solicitado
   const { companyName } = useBrandingConfig();
   const productName = (companyName && companyName.trim().length > 0) ? companyName : (import.meta.env.VITE_COMPANY_NAME || 'Poupe Já');
-  const appLabelName = 'Luana Figueiredo';
   const appUrl = import.meta.env.VITE_APP_URL;
 
   const scrollToPlans = useCallback(() => {
@@ -49,11 +48,6 @@ const LandingHero = () => {
             transition={{ duration: 0.6 }}
             className="order-1"
           >
-            <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
-              <MessageCircle className="h-4 w-4 dv-text-accent" />
-              <span>Aplicativo — {appLabelName}</span>
-            </div>
-
             <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
               <span className="block dv-brand-text">{productName}</span>
               <span className="block text-foreground">Clareza e controle do seu dinheiro direto no WhatsApp</span>
