@@ -207,7 +207,7 @@ const LandingPage = () => {
             <div className="flex justify-center">
               <div className="w-full max-w-2xl lg:max-w-3xl xl:max-w-4xl">
                 <img 
-                  src="/images/sections/categorias.png"
+                  src="/images/sections/categorias-new.png"
                   alt="Categorias personalizadas"
                   className="w-full h-auto rounded-lg shadow-lg"
                 />
