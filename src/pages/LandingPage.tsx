@@ -47,103 +47,105 @@ const LandingPage = () => {
         <div className="w-full px-4">
           {/* Seção 01 - Registre tudo no WhatsApp */}
           <motion.div 
-            className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center max-w-7xl mx-auto mb-32"
+            className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center max-w-7xl mx-auto mb-20 lg:mb-32 px-4"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
             viewport={{ once: true }}
           >
-            <div className="text-left">
+            <div className="text-center lg:text-left">
               <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-lg text-white font-bold text-lg mb-6 shadow-lg" style={{boxShadow: '0 0 20px rgba(99, 102, 241, 0.4)'}}>
                 01
               </div>
-              <h2 className="text-3xl font-bold text-foreground mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 sm:mb-6">
                 Registre tudo no WhatsApp
               </h2>
-              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+              <p className="text-base sm:text-lg text-muted-foreground mb-6 sm:mb-8 leading-relaxed">
                 Registre receitas e despesas diretamente pelo WhatsApp. Basta enviar uma mensagem para nosso assistente virtual e ele lançará automaticamente em sua conta.
               </p>
-                <div className="space-y-4">
-                  <div className="flex items-center space-x-3">
+                <div className="space-y-3 sm:space-y-4">
+                  <div className="flex items-start sm:items-center space-x-3 justify-center lg:justify-start">
                     <div className="h-6 w-6 rounded-full bg-cyan-500 flex items-center justify-center flex-shrink-0">
                       <svg className="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    <span className="text-muted-foreground">Registro rápido por mensagem de texto ou áudio</span>
+                    <span className="text-sm sm:text-base text-muted-foreground text-left">Registro rápido por mensagem de texto ou áudio</span>
                   </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="h-6 w-6 rounded-full bg-cyan-500 flex items-center justify-center flex-shrink-0">
+                  <div className="flex items-start sm:items-center space-x-3 justify-center lg:justify-start">
+                    <div className="h-6 w-6 rounded-full bg-cyan-500 flex items-center justify-center flex-shrink-0 mt-0.5 sm:mt-0">
                       <svg className="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    <span className="text-muted-foreground">Interpretação e categorização inteligente</span>
+                    <span className="text-sm sm:text-base text-muted-foreground text-left">Interpretação e categorização inteligente</span>
                   </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="h-6 w-6 rounded-full bg-cyan-500 flex items-center justify-center flex-shrink-0">
+                  <div className="flex items-start sm:items-center space-x-3 justify-center lg:justify-start">
+                    <div className="h-6 w-6 rounded-full bg-cyan-500 flex items-center justify-center flex-shrink-0 mt-0.5 sm:mt-0">
                       <svg className="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    <span className="text-muted-foreground">Praticidade e comodidade</span>
+                    <span className="text-sm sm:text-base text-muted-foreground text-left">Praticidade e comodidade</span>
                   </div>
                 </div>
             </div>
             
-            <div className="flex justify-center items-center">
-              <WhatsAppAnimation />
+            <div className="flex justify-center items-center order-first lg:order-last">
+              <div className="w-full max-w-md lg:max-w-full">
+                <WhatsAppAnimation />
+              </div>
             </div>
           </motion.div>
 
           {/* Seção 02 - Painel profissional */}
           <motion.div 
-            className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center max-w-7xl mx-auto mb-32 bg-muted/10 py-16 px-4 rounded-3xl"
+            className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center max-w-7xl mx-auto mb-20 lg:mb-32 bg-muted/10 py-8 sm:py-12 lg:py-16 px-4 rounded-3xl"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <div className="text-left order-1 lg:order-1">
+            <div className="text-center lg:text-left order-2 lg:order-1">
               <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-lg text-white font-bold text-lg mb-6 shadow-lg" style={{boxShadow: '0 0 20px rgba(99, 102, 241, 0.4)'}}>
                 02
               </div>
-              <h2 className="text-3xl font-bold text-foreground mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 sm:mb-6">
                 Painel profissional
               </h2>
-              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+              <p className="text-base sm:text-lg text-muted-foreground mb-6 sm:mb-8 leading-relaxed">
               Tenha acesso a um painel que pode ser visualizado no celular ou no computador, com todas as suas informações. E o melhor: você não precisa perder tempo cadastrando nada. seu assistente faz tudo para você pelo WhatsApp!
               </p>
-                <div className="space-y-4">
-                  <div className="flex items-center space-x-3">
+                <div className="space-y-3 sm:space-y-4">
+                  <div className="flex items-start sm:items-center space-x-3 justify-center lg:justify-start">
                     <div className="h-6 w-6 rounded-full bg-cyan-500 flex items-center justify-center flex-shrink-0">
                       <svg className="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    <span className="text-muted-foreground">Gráficos de fluxo de caixa</span>
+                    <span className="text-sm sm:text-base text-muted-foreground text-left">Gráficos de fluxo de caixa</span>
                   </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="h-6 w-6 rounded-full bg-cyan-500 flex items-center justify-center flex-shrink-0">
+                  <div className="flex items-start sm:items-center space-x-3 justify-center lg:justify-start">
+                    <div className="h-6 w-6 rounded-full bg-cyan-500 flex items-center justify-center flex-shrink-0 mt-0.5 sm:mt-0">
                       <svg className="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    <span className="text-muted-foreground">Organização automatizada</span>
+                    <span className="text-sm sm:text-base text-muted-foreground text-left">Organização automatizada</span>
                   </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="h-6 w-6 rounded-full bg-cyan-500 flex items-center justify-center flex-shrink-0">
+                  <div className="flex items-start sm:items-center space-x-3 justify-center lg:justify-start">
+                    <div className="h-6 w-6 rounded-full bg-cyan-500 flex items-center justify-center flex-shrink-0 mt-0.5 sm:mt-0">
                       <svg className="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    <span className="text-muted-foreground">Experiência prática e acessível</span>
+                    <span className="text-sm sm:text-base text-muted-foreground text-left">Experiência prática e acessível</span>
                   </div>
                 </div>
             </div>
 
-            <div className="flex justify-center order-2 lg:order-2">
-              <div className="w-full max-w-2xl lg:max-w-3xl xl:max-w-4xl">
+            <div className="flex justify-center order-1 lg:order-2">
+              <div className="w-full max-w-md sm:max-w-lg lg:max-w-2xl xl:max-w-3xl">
                 <img 
                   src="/images/sections/dashboard.png"
                   alt="Painel profissional"
@@ -155,14 +157,14 @@ const LandingPage = () => {
 
           {/* Seção 03 - Categorias personalizadas */}
           <motion.div 
-            className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center max-w-7xl mx-auto mb-32"
+            className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center max-w-7xl mx-auto mb-20 lg:mb-32 px-4"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
             viewport={{ once: true }}
           >
-            <div className="flex justify-center order-2 lg:order-1">
-              <div className="w-full max-w-2xl lg:max-w-3xl xl:max-w-4xl">
+            <div className="flex justify-center order-first lg:order-first">
+              <div className="w-full max-w-md sm:max-w-lg lg:max-w-2xl xl:max-w-3xl">
                 <img 
                   src="/images/sections/categorias-new.png"
                   alt="Categorias personalizadas"
@@ -171,40 +173,40 @@ const LandingPage = () => {
               </div>
             </div>
 
-            <div className="text-left order-1 lg:order-2">
+            <div className="text-center lg:text-left order-last lg:order-last">
               <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-lg text-white font-bold text-lg mb-6 shadow-lg" style={{boxShadow: '0 0 20px rgba(99, 102, 241, 0.4)'}}>
                 03
               </div>
-              <h2 className="text-3xl font-bold text-foreground mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 sm:mb-6">
                 Categorias personalizadas
               </h2>
-              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+              <p className="text-base sm:text-lg text-muted-foreground mb-6 sm:mb-8 leading-relaxed">
                 Por padrão o seu <span className="dv-brand-text">{resolvedName}</span> já cadastra as principais categorias pra você, mas você pode cadastrar novas categorias. Você pode criar categorias para sua empresa ou algo específico que você queira separar.
               </p>
-                <div className="space-y-4">
-                  <div className="flex items-center space-x-3">
+                <div className="space-y-3 sm:space-y-4">
+                  <div className="flex items-start sm:items-center space-x-3 justify-center lg:justify-start">
                     <div className="h-6 w-6 rounded-full bg-cyan-500 flex items-center justify-center flex-shrink-0">
                       <svg className="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    <span className="text-muted-foreground">Cadastro ilimitado de categorias</span>
+                    <span className="text-sm sm:text-base text-muted-foreground text-left">Cadastro ilimitado de categorias</span>
                   </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="h-6 w-6 rounded-full bg-cyan-500 flex items-center justify-center flex-shrink-0">
+                  <div className="flex items-start sm:items-center space-x-3 justify-center lg:justify-start">
+                    <div className="h-6 w-6 rounded-full bg-cyan-500 flex items-center justify-center flex-shrink-0 mt-0.5 sm:mt-0">
                       <svg className="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    <span className="text-muted-foreground">Categorização inteligente automática</span>
+                    <span className="text-sm sm:text-base text-muted-foreground text-left">Categorização inteligente automática</span>
                   </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="h-6 w-6 rounded-full bg-cyan-500 flex items-center justify-center flex-shrink-0">
+                  <div className="flex items-start sm:items-center space-x-3 justify-center lg:justify-start">
+                    <div className="h-6 w-6 rounded-full bg-cyan-500 flex items-center justify-center flex-shrink-0 mt-0.5 sm:mt-0">
                       <svg className="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    <span className="text-muted-foreground">Visualize ou peça no WhatsApp relatórios de cada categoria</span>
+                    <span className="text-sm sm:text-base text-muted-foreground text-left">Visualize ou peça no WhatsApp relatórios de cada categoria</span>
                   </div>
                 </div>
             </div>

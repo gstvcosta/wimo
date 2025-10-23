@@ -18,21 +18,21 @@ const LandingCTA = () => {
   }, []);
 
   return (
-    <section className="py-20 w-full">
+    <section className="py-12 sm:py-16 md:py-20 w-full">
       <div className="w-full px-4">
         <motion.div
-          className="bg-gradient-to-r from-primary via-accent to-secondary rounded-3xl p-12 md:p-16 text-center text-white max-w-6xl mx-auto shadow-2xl relative overflow-hidden"
+          className="bg-gradient-to-r from-primary via-accent to-secondary rounded-3xl p-6 sm:p-8 md:p-12 lg:p-16 text-center text-white max-w-6xl mx-auto shadow-2xl relative overflow-hidden"
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
           style={{boxShadow: '0 20px 60px rgba(99, 102, 241, 0.5)'}}
         >
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6">
           Veja, Planeje e Domine o Seu Dinheiro.
           </h2>
           
-          <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto opacity-95 leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 max-w-3xl mx-auto opacity-95 leading-relaxed px-2">
           Transforme sua relação com o dinheiro hoje mesmo. Com o <span className="text-white font-bold bg-white/20 px-2 py-1 rounded-lg border border-white/40">{resolvedName}</span>, você conquista controle total das suas finanças de forma simples e inteligente.
           </p>
           

@@ -41,8 +41,50 @@ const LandingHero = () => {
     <section className="dv-hero-gradient relative overflow-hidden w-full pt-10 md:pt-16 pb-16 md:pb-28">
       <div className="w-full px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 max-w-6xl mx-auto items-center">
-          {/* Lado Esquerdo – Telefone + cards flutuantes */}
-          <div className="relative order-2 md:order-1 h-[420px] md:h-[560px] pointer-events-none select-none" aria-hidden>
+          {/* Lado Esquerdo – Texto principal */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="order-2 md:order-1 text-center md:text-left"
+          >
+            <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-4" style={{letterSpacing: '-0.02em', lineHeight: '1.3'}}>
+              <span className="block dv-brand-text">{productName}</span>
+              <span className="block text-foreground">Clareza e controle do seu dinheiro direto no WhatsApp</span>
+            </h1>
+
+            <p className="text-lg md:text-xl text-muted-foreground max-w-xl mb-8 leading-relaxed mx-auto md:mx-0">
+              Acompanhe gastos, metas e relatórios sem planilhas. Simples, prático e feito para o seu dia a dia.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+              <Button 
+                size="lg" 
+                className="text-sm md:text-base px-6 md:px-8 py-5 bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-all hover:scale-[1.02]"
+                onClick={scrollToPlans}
+              >
+                Quero começar agora
+              </Button>
+              <Button 
+                size="lg" 
+                variant="outline" 
+                className="text-sm md:text-base px-6 md:px-8 py-5"
+                onClick={handleLoginClick}
+              >
+                Já tenho conta
+              </Button>
+            </div>
+
+            {/* Benefícios rápidos */}
+            <div className="mt-8 grid grid-cols-2 gap-3 max-w-sm mx-auto md:mx-0">
+              <Badge variant="secondary" className="justify-center">Simples</Badge>
+              <Badge variant="secondary" className="justify-center">Prático</Badge>
+              <Badge variant="secondary" className="col-span-2 flex items-center justify-center gap-1"><MessageCircle className="h-3.5 w-3.5" /> 100% no WhatsApp</Badge>
+            </div>
+          </motion.div>
+
+          {/* Lado Direito – Telefone + cards flutuantes */}
+          <div className="relative order-1 md:order-2 h-[420px] md:h-[560px] pointer-events-none select-none" aria-hidden>
             {/* Mockup do iPhone */}
             <img
               src="/mockup-topo.png"
@@ -134,48 +176,6 @@ const LandingHero = () => {
               </Card>
             </motion.div>
           </div>
-
-          {/* Lado Direito – Texto principal */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="order-1 md:order-2"
-          >
-            <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-4" style={{letterSpacing: '-0.02em', lineHeight: '1.3'}}>
-              <span className="block dv-brand-text">{productName}</span>
-              <span className="block text-foreground">Clareza e controle do seu dinheiro direto no WhatsApp</span>
-            </h1>
-
-            <p className="text-lg md:text-xl text-muted-foreground max-w-xl mb-8 leading-relaxed">
-              Acompanhe gastos, metas e relatórios sem planilhas. Simples, prático e feito para o seu dia a dia.
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                size="lg" 
-                className="text-sm md:text-base px-6 md:px-8 py-5 bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-all hover:scale-[1.02]"
-                onClick={scrollToPlans}
-              >
-                Quero começar agora
-              </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="text-sm md:text-base px-6 md:px-8 py-5"
-                onClick={handleLoginClick}
-              >
-                Já tenho conta
-              </Button>
-            </div>
-
-            {/* Benefícios rápidos */}
-            <div className="mt-8 grid grid-cols-2 gap-3">
-              <Badge variant="secondary">Simples</Badge>
-              <Badge variant="secondary">Prático</Badge>
-              <Badge variant="secondary" className="col-span-2 flex items-center justify-center gap-1"><MessageCircle className="h-3.5 w-3.5" /> 100% no WhatsApp</Badge>
-            </div>
-          </motion.div>
         </div>
       </div>
     </section>
