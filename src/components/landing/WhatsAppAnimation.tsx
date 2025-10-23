@@ -12,57 +12,68 @@ export const WhatsAppAnimation = () => {
   const [messages, setMessages] = useState<Message[]>([]);
   const [isTyping, setIsTyping] = useState(false);
 
-  const messageSequence = [
-    { text: "Gastei 55,00 no almoço hoje", time: "12:30", isBot: false },
-    { 
-      text: "🎉 Despesa registrada com sucesso!\n\n✅ Tipo: Despesa\n📝 Descrição: Almoço\n💰 Valor: R$ 55,00\n📍 Categoria: Alimentação\n🗓 Data: 23/10/2025", 
-      time: "12:30", 
-      isBot: true 
+  const interactions = [
+    {
+      userMessage: { text: "Gastei 55,00 no almoço hoje", time: "12:30" },
+      botMessage: { 
+        text: "🎉 Despesa registrada com sucesso!\n\n✅ Tipo: Despesa\n📝 Descrição: Almoço\n💰 Valor: R$ 55,00\n📍 Categoria: Alimentação\n🗓 Data: 23/10/2025", 
+        time: "12:30" 
+      }
     },
-    { text: "Recebi 200,00 de freelance", time: "14:15", isBot: false },
-    { 
-      text: "🎉 Que ótimo! Receita adicionada com sucesso!\n\n✅ Tipo: Receita\n📝 Descrição: Freelance\n💰 Valor: R$ 200,00\n📍 Categoria: Freelance\n🗓 Data: 23/10/2025", 
-      time: "14:15", 
-      isBot: true 
+    {
+      userMessage: { text: "Recebi 200,00 de freelance", time: "14:15" },
+      botMessage: { 
+        text: "🎉 Que ótimo! Receita adicionada com sucesso!\n\n✅ Tipo: Receita\n📝 Descrição: Freelance\n💰 Valor: R$ 200,00\n📍 Categoria: Freelance\n🗓 Data: 23/10/2025", 
+        time: "14:15" 
+      }
     },
   ];
 
   useEffect(() => {
-    let currentIndex = 0;
+    let currentInteractionIndex = 0;
     let timeoutId: NodeJS.Timeout;
 
-    const addNextMessage = () => {
-      if (currentIndex >= messageSequence.length) {
-        // Reset animation after a pause
-        timeoutId = setTimeout(() => {
-          setMessages([]);
-          currentIndex = 0;
-          addNextMessage();
-        }, 3000);
-        return;
-      }
+    const playInteraction = () => {
+      // Limpar tela
+      setMessages([]);
+      setIsTyping(false);
 
-      // Show typing indicator
-      setIsTyping(true);
+      const interaction = interactions[currentInteractionIndex];
       
+      // Passo 1: Mostrar mensagem do usuário
       timeoutId = setTimeout(() => {
-        setIsTyping(false);
+        setMessages([{ 
+          id: 0, 
+          text: interaction.userMessage.text, 
+          time: interaction.userMessage.time, 
+          isBot: false 
+        }]);
         
-        // Add message
-        const newMessage = {
-          id: currentIndex,
-          ...messageSequence[currentIndex],
-        };
-        
-        setMessages(prev => [...prev, newMessage]);
-        currentIndex++;
-        
-        // Schedule next message
-        timeoutId = setTimeout(addNextMessage, 2000);
-      }, 1500);
+        // Passo 2: Mostrar indicador "digitando..."
+        timeoutId = setTimeout(() => {
+          setIsTyping(true);
+          
+          // Passo 3: Mostrar resposta do bot
+          timeoutId = setTimeout(() => {
+            setIsTyping(false);
+            setMessages(prev => [...prev, { 
+              id: 1, 
+              text: interaction.botMessage.text, 
+              time: interaction.botMessage.time, 
+              isBot: true 
+            }]);
+            
+            // Passo 4: Pausar e ir para próxima interação
+            timeoutId = setTimeout(() => {
+              currentInteractionIndex = (currentInteractionIndex + 1) % interactions.length;
+              playInteraction();
+            }, 3000);
+          }, 1500);
+        }, 800);
+      }, 500);
     };
 
-    addNextMessage();
+    playInteraction();
 
     return () => {
       if (timeoutId) clearTimeout(timeoutId);
