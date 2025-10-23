@@ -260,7 +260,7 @@ const LandingPage = () => {
           <div className="max-w-6xl mx-auto">
             <ShareButtons />
             <div className="text-center text-muted-foreground mt-6">
-              <p>&copy; 2025 {resolvedName} - Desenvolvido por Luana Figueiredo, especialista em gestão financeira</p>
+              <p>&copy; 2025 {resolvedName}. Todos os direitos reservados. Transformando sua relação com o dinheiro.</p>
             </div>
           </div>
         </div>
