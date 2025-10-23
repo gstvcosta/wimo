@@ -6,6 +6,7 @@ import LandingBenefits from '@/components/landing/LandingBenefits';
 import LandingCTA from '@/components/landing/LandingCTA';
 import LandingHeader from '@/components/landing/LandingHeader';
 import ShareButtons from '@/components/landing/ShareButtons';
+import { WhatsAppAnimation } from '@/components/landing/WhatsAppAnimation';
 import { motion } from 'framer-motion';
 
 const LandingPage = () => {
@@ -90,14 +91,8 @@ const LandingPage = () => {
                 </div>
             </div>
             
-            <div className="flex justify-center">
-              <div className="w-full max-w-[216px] md:max-w-[252px] lg:max-w-[288px]">
-                <img 
-                  src="/images/sections/Realme 10.png"
-                  alt="Registre tudo no WhatsApp"
-                  className="w-full h-auto"
-                />
-              </div>
+            <div className="flex justify-center items-center">
+              <WhatsAppAnimation />
             </div>
           </motion.div>
 
