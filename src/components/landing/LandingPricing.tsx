@@ -61,7 +61,7 @@ const LandingPricing = () => {
   }];
 
   return (
-    <section className="py-20 w-full" id="planos">
+    <section className="py-24 w-full" id="planos">
       <div className="w-full px-4">
         <motion.div 
           className="text-center mb-16" 
@@ -79,7 +79,7 @@ const LandingPricing = () => {
         </motion.div>
         
         <motion.div 
-          className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto" 
+          className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto"
           initial={{ opacity: 0, y: 40 }} 
           whileInView={{ opacity: 1, y: 0 }} 
           transition={{ duration: 0.6, staggerChildren: 0.1 }} 
@@ -94,11 +94,11 @@ const LandingPricing = () => {
               viewport={{ once: true }} 
               className="relative"
             >
-              <Card className={`h-full relative ${plan.popular ? 'border-primary shadow-xl scale-105' : 'hover:shadow-lg'} transition-all duration-300`}>
+              <Card className={`h-full relative ${plan.popular ? 'border-accent shadow-2xl scale-105 bg-gradient-to-br from-card to-card/80' : 'hover:shadow-lg border-primary/20'} transition-all duration-300`} style={plan.popular ? {boxShadow: '0 0 40px rgba(99, 102, 241, 0.4)'} : {}}>
                 {plan.popular && (
                   <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                    <div className="bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-medium flex items-center gap-1">
-                      <Star className="h-4 w-4" />
+                    <div className="bg-gradient-to-r from-primary to-accent text-white px-4 py-1 rounded-full text-sm font-medium flex items-center gap-1 shadow-lg">
+                      <Star className="h-4 w-4 text-cyan-300" />
                       Mais Popular
                     </div>
                   </div>
@@ -124,7 +124,7 @@ const LandingPricing = () => {
                   <ul className="space-y-3 mb-8">
                     {plan.features.map((feature, idx) => (
                       <li key={idx} className="flex items-center gap-3">
-                        <Check className="h-5 w-5 text-green-500 flex-shrink-0" />
+                        <Check className="h-5 w-5 text-cyan-400 flex-shrink-0" />
                         <span className="text-sm">{feature}</span>
                       </li>
                     ))}
@@ -136,7 +136,7 @@ const LandingPricing = () => {
                   </ul>
                   
                   <Button 
-                    className="w-full" 
+                    className={`w-full ${plan.popular ? 'bg-gradient-to-r from-primary to-accent hover:opacity-90' : ''} transition-all hover:scale-[1.02]`}
                     variant={plan.buttonVariant} 
                     size="lg"
                     onClick={() => window.location.href = plan.linkTo}

@@ -23,10 +23,11 @@ const LandingHeader = () => {
 
   return (
     <motion.header 
-      className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b w-full"
+      className="sticky top-0 z-50 bg-background/70 backdrop-blur-xl border-b border-primary/20 w-full"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
+      style={{boxShadow: '0 4px 20px rgba(0, 0, 0, 0.3)'}}
     >
       <div className="w-full px-4 py-4 flex items-center justify-between max-w-none">
         <div className="flex items-center gap-2">

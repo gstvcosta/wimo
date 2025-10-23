@@ -15,9 +15,8 @@ function App() {
   // Configura as meta tags de SEO dinamicamente
   useSEO();
 
-  // Tema padrão via .env: light | dark | system
-  const envTheme = (import.meta.env.VITE_THEME_DEFAULT as string | undefined)?.toLowerCase();
-  const defaultTheme = envTheme === 'dark' || envTheme === 'light' || envTheme === 'system' ? envTheme : 'system';
+  // Forçar tema dark
+  const defaultTheme = 'dark';
 
   return (
     <QueryClientProvider client={queryClient}>

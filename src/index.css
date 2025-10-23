@@ -9,84 +9,84 @@
 @layer base {
   :root {
     /* Light mode */
-    --background: 210 40% 98%;
-    --foreground: 222 47% 11%;
+    --background: 220 26% 14%;
+    --foreground: 210 40% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
+    --card: 220 26% 18%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
+    --popover: 220 26% 14%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 142 71% 45%; /* green-500 */
+    --primary: 245 58% 51%; /* azul-indigo vibrante */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 160 84% 39%; /* emerald-600 */
+    --secondary: 262 52% 47%; /* roxo profundo */
     --secondary-foreground: 210 40% 98%;
 
-    --muted: 210 40% 96%;
-    --muted-foreground: 215 16% 47%;
+    --muted: 220 26% 22%;
+    --muted-foreground: 215 20% 65%;
 
-    --accent: 142 71% 45%; /* usar o mesmo verde do primary para o acento */
+    --accent: 217 91% 60%; /* azul elétrico */
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 142 71% 45%;
+    --border: 220 26% 28%;
+    --input: 220 26% 28%;
+    --ring: 245 58% 51%;
 
     --radius: 1rem;
 
-    --sidebar-background: 142 71% 45%;
+    --sidebar-background: 245 58% 51%;
     --sidebar-foreground: 0 0% 100%;
-    --sidebar-primary: 160 84% 39%;
+    --sidebar-primary: 262 52% 47%;
     --sidebar-primary-foreground: 210 40% 98%;
-    --sidebar-accent: 142 50% 36%;
+    --sidebar-accent: 217 91% 60%;
     --sidebar-accent-foreground: 0 0% 100%;
-    --sidebar-border: 142 50% 36%;
-    --sidebar-ring: 160 84% 39%;
+    --sidebar-border: 245 40% 40%;
+    --sidebar-ring: 262 52% 47%;
   }
 
   .dark {
     /* Dark mode */
-    --background: 222 47% 11%;
+    --background: 220 26% 8%;
     --foreground: 210 40% 98%;
 
-    --card: 222 47% 14%;
+    --card: 220 26% 12%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 222 47% 11%;
+    --popover: 220 26% 8%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 142 50% 36%; /* verde mais contido para dark */
+    --primary: 245 58% 51%; /* azul-indigo vibrante */
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 160 60% 32%; /* emerald mais escuro */
+    --secondary: 262 52% 47%; /* roxo profundo */
     --secondary-foreground: 210 40% 98%;
 
-    --muted: 217 33% 18%;
+    --muted: 220 26% 15%;
     --muted-foreground: 215 20% 65%;
 
-    --accent: 142 50% 36%; /* acento verde no dark */
+    --accent: 217 91% 60%; /* azul elétrico */
     --accent-foreground: 210 40% 98%;
 
     --destructive: 0 63% 31%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217 33% 18%;
-    --input: 217 33% 18%;
-    --ring: 142 50% 36%;
+    --border: 220 26% 20%;
+    --input: 220 26% 20%;
+    --ring: 245 58% 51%;
 
-    --sidebar-background: 142 30% 20%;
+    --sidebar-background: 245 40% 20%;
     --sidebar-foreground: 210 40% 98%;
-    --sidebar-primary: 160 60% 32%; 
+    --sidebar-primary: 262 52% 47%; 
     --sidebar-primary-foreground: 210 40% 98%;
-    --sidebar-accent: 142 40% 30%;
+    --sidebar-accent: 217 70% 50%;
     --sidebar-accent-foreground: 210 40% 98%;
-    --sidebar-border: 142 30% 15%;
-    --sidebar-ring: 160 60% 32%;
+    --sidebar-border: 245 30% 15%;
+    --sidebar-ring: 262 52% 47%;
   }
 }
 
@@ -235,9 +235,10 @@
 }
 .dv-text-accent { color: hsl(var(--accent)); }
 
-/* Hero gradient using the palette, sutil e com menos "verde" dominante */
+/* Hero gradient using blue/purple palette */
 .dv-hero-gradient {
   background-image:
-    radial-gradient(1200px 600px at 78% 18%, hsl(var(--accent) / 0.18), transparent 60%),
+    radial-gradient(1200px 600px at 78% 18%, hsl(var(--primary) / 0.22), transparent 60%),
+    radial-gradient(800px 500px at 20% 80%, hsl(var(--secondary) / 0.18), transparent 50%),
     linear-gradient(135deg, hsl(var(--background)), hsl(var(--muted)));
 }
