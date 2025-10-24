@@ -90,16 +90,23 @@ export const useShareConfig = () => {
   const whatsappUrl = import.meta.env.VITE_WHATSAPP_URL;
   const instagramUrl = import.meta.env.VITE_INSTAGRAM_URL;
   
+  // Valores padrão do .env para compartilhamento
+  const defaultTitle = import.meta.env.VITE_SEO_TITLE || 'Poupeja - Controle Financeiro Inteligente';
+  const defaultDescription = import.meta.env.VITE_SEO_DESCRIPTION || 'Transforme sua vida financeira com o aplicativo mais completo e intuitivo do mercado.';
+  const companyName = import.meta.env.VITE_COMPANY_NAME || 'Poupeja';
+  
   const shareOnWhatsApp = (text?: string, url?: string) => {
-    const shareText = text || document.title;
+    // Usa o texto fornecido ou o título do .env
+    const shareText = text || defaultTitle;
     const shareUrl = url || window.location.href;
-    const whatsappShareUrl = `https://wa.me/?text=${encodeURIComponent(`${shareText} ${shareUrl}`)}`;
+    const whatsappShareUrl = `https://wa.me/?text=${encodeURIComponent(`${shareText}\n\n${shareUrl}`)}`;
     window.open(whatsappShareUrl, '_blank');
   };
 
   const shareOnSocial = (platform: 'facebook' | 'twitter' | 'linkedin', url?: string, text?: string) => {
     const shareUrl = url || window.location.href;
-    const shareText = text || document.title;
+    // Usa o texto fornecido ou o título do .env
+    const shareText = text || defaultTitle;
     
     let socialUrl = '';
     
@@ -124,6 +131,9 @@ export const useShareConfig = () => {
     whatsappUrl,
     instagramUrl,
     shareOnWhatsApp,
-    shareOnSocial
+    shareOnSocial,
+    defaultTitle,
+    defaultDescription,
+    companyName
   };
 };
