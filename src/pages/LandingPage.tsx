@@ -18,7 +18,7 @@ const LandingPage = () => {
       <LandingHeader />
 
       <motion.main
-        className="flex-1"
+        className="flex-1 overflow-x-hidden"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
@@ -28,7 +28,7 @@ const LandingPage = () => {
 
         {/* Apresentação do App */}
         <motion.section
-          className="w-full py-16"
+          className="w-full py-16 overflow-x-hidden"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -44,7 +44,7 @@ const LandingPage = () => {
         </motion.section>
 
         {/* Seções 01, 02, 03 */}
-        <div className="w-full px-4">
+        <div className="w-full px-4 overflow-x-hidden">
           {/* Seção 01 - Registre tudo no WhatsApp */}
           <motion.div 
             className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center max-w-7xl mx-auto mb-20 lg:mb-32 px-4"
@@ -257,7 +257,7 @@ const LandingPage = () => {
       </motion.main>
       
       {/* Footer */}
-      <footer className="bg-card/30 border-t py-8 w-full">
+      <footer className="bg-card/30 border-t py-8 w-full overflow-x-hidden">
         <div className="w-full px-4">
           <div className="max-w-6xl mx-auto">
             <ShareButtons />
