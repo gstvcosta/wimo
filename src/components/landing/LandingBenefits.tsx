@@ -10,6 +10,7 @@ import {
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useBrandingConfig } from '@/hooks/useBrandingConfig';
+import BrandText from '@/components/ui/BrandText';
 
 const LandingBenefits = () => {
     const { companyName } = useBrandingConfig();
@@ -90,7 +91,7 @@ const LandingBenefits = () => {
                         Funcionalidades que facilitam sua vida financeira
                     </h2>
                     <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                        Conheça as ferramentas que o <span className="dv-brand-text">{resolvedName}</span> oferece para transformar 
+                        Conheça as ferramentas que o <BrandText name={resolvedName} /> oferece para transformar 
                         sua gestão financeira e conquistar seus objetivos.
                     </p>
                 </motion.div>
@@ -110,10 +111,10 @@ const LandingBenefits = () => {
                             variants={itemVariants}
                             whileHover={{ y: -5 }}
                         >
-                            <div className="bg-card dark:bg-card rounded-2xl p-6 shadow-lg border border-primary/20 hover:border-primary/40 hover:shadow-xl transition-all duration-300 h-full" style={{boxShadow: '0 4px 20px rgba(99, 102, 241, 0.15)'}}>
+                    <div className="bg-card rounded-2xl p-6 shadow-lg border border-primary/20 hover:border-primary/40 hover:shadow-xl transition-all duration-300 h-full" style={{boxShadow: '0 4px 20px rgba(99, 102, 241, 0.15)'}}>
                                 {/* Icon */}
                                 <div className={`w-14 h-14 bg-gradient-to-r ${feature.color} rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
-                                    <feature.icon className="h-7 w-7 text-white" />
+                        <feature.icon className="h-7 w-7 text-primary" />
                                 </div>
                                 
                                 {/* Content */}

@@ -27,6 +27,13 @@ export const WhatsAppAnimation = () => {
         time: "14:15" 
       }
     },
+    {
+      userMessage: { text: "Marque o compromisso Reunião hoje às 20h", time: "16:05" },
+      botMessage: {
+        text: "O compromisso \"Reunião\" foi criado com sucesso para hoje às 20h! Se precisar de mais alguma coisa, é só avisar!",
+        time: "16:05"
+      }
+    },
   ];
 
   useEffect(() => {
@@ -89,10 +96,10 @@ export const WhatsAppAnimation = () => {
           {/* WhatsApp Header */}
           <div className="bg-[#075E54] px-4 py-3 flex items-center gap-3">
             <div className="w-8 h-8 rounded-full bg-gray-300 flex items-center justify-center">
-              <span className="text-xs">💰</span>
+              <img src="/images/favicon.png" alt="Wimo" className="w-4 h-4" />
             </div>
             <div className="flex-1">
-              <h3 className="text-white text-sm font-semibold">Minhas Finanças</h3>
+              <h3 className="text-white text-sm font-semibold">Wimo</h3>
               <p className="text-white/70 text-xs">online</p>
             </div>
           </div>

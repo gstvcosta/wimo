@@ -3,6 +3,8 @@ import { useCallback } from 'react';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 import { useBrandingConfig } from '@/hooks/useBrandingConfig';
+import BrandText from '@/components/ui/BrandText';
+import { Check } from 'lucide-react';
 
 // Branding dinâmico restaurado
 
@@ -21,19 +23,19 @@ const LandingCTA = () => {
     <section className="py-12 sm:py-16 md:py-20 w-full">
       <div className="w-full px-4">
         <motion.div
-          className="bg-gradient-to-r from-primary via-accent to-secondary rounded-3xl p-6 sm:p-8 md:p-12 lg:p-16 text-center text-white max-w-6xl mx-auto shadow-2xl relative overflow-hidden"
+          className="bg-gradient-to-r from-primary via-accent to-secondary rounded-3xl p-6 sm:p-8 md:p-12 lg:p-16 text-center text-white max-w-6xl mx-auto shadow-2xl relative overflow-hidden" style={{ boxShadow: '0px 20px 60px #4ECDC4' }}
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          style={{boxShadow: '0 20px 60px rgba(99, 102, 241, 0.5)'}}
+          style={{boxShadow: '0 20px 60px #4ECDC4'}}
         >
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6">
-          Controle, Planeje e Conquiste Suas Metas.
+          Pronto para transformar suas finanças?
           </h2>
           
           <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 max-w-3xl mx-auto opacity-95 leading-relaxed px-2">
-          Revolucione sua gestão financeira agora. Com o <span className="text-white font-bold bg-white/20 px-2 py-1 rounded-lg border border-white/40">{resolvedName}</span>, você tem domínio completo do seu dinheiro de maneira prática e eficiente.
+          Revolucione sua gestão financeira agora. Com o <BrandText name={resolvedName} className="font-bold bg-white/20 px-2 py-1 rounded-lg border border-white/40" />, você tem domínio completo do seu dinheiro de maneira prática e eficiente.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -48,7 +50,9 @@ const LandingCTA = () => {
           </div>
           
           <div className="mt-8 text-sm opacity-90">
-            ✔️ Simples <span className="mx-2">•</span> ✔️ Prático <span className="mx-2">•</span> ✔️ 100% no WhatsApp
+            <span className="inline-flex items-center gap-1"><Check className="h-5 w-5 text-white" /> Simples</span>{" "}
+            <span className="inline-flex items-center gap-1"><Check className="h-5 w-5 text-white" /> Prático</span>{" "}
+            <span className="inline-flex items-center gap-1"><Check className="h-5 w-5 text-white" /> 100% no WhatsApp</span>
           </div>
         </motion.div>
       </div>

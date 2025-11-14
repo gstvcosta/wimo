@@ -15,12 +15,12 @@ function App() {
   // Configura as meta tags de SEO dinamicamente
   useSEO();
 
-  // Forçar tema dark
-  const defaultTheme = 'dark';
+  // Definir tema padrão como claro
+  const defaultTheme = 'light';
 
   return (
     <QueryClientProvider client={queryClient}>
-      <ThemeProvider attribute="class" defaultTheme={defaultTheme} enableSystem>
+      <ThemeProvider attribute="class" defaultTheme={defaultTheme} enableSystem={false}>
         <BrandingProvider>
           <LandingPage />
         </BrandingProvider>

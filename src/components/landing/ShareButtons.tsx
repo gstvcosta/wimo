@@ -126,7 +126,7 @@ const ShareButtons: React.FC<ShareButtonsProps> = ({
 
   // Default variant
   return (
-    <div className={`flex flex-col sm:flex-row gap-3 ${className}`}>
+    <div className={`flex flex-col sm:flex-row gap-3 items-center justify-center text-center ${className}`}>
       <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2 sm:mb-0">
         <Share2 className="h-4 w-4" />
         <span>Compartilhe esta página:</span>

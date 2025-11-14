@@ -2,7 +2,7 @@
 
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Check, Star, Loader2 } from 'lucide-react';
+import { Check, Star, Loader2, Sparkles } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { usePlanConfig } from '@/hooks/usePlanConfig';
 
@@ -37,7 +37,7 @@ const LandingPricing = () => {
     name: "Mensal",
     price: config.prices.monthly.displayPrice,
     period: "/mês",
-    description: "Ideal para controle pessoal",
+    description: "",
     features: config.prices.monthly.features,
     limitations: [],
     buttonText: "Assinar Agora",
@@ -51,7 +51,7 @@ const LandingPricing = () => {
     originalPrice: config.prices.annual.displayOriginalPrice,
     savings: config.prices.annual.displaySavings,
     monthlyEquivalent: config.prices.annual.monthlyEquivalent,
-    description: "Máximo custo-benefício",
+    description: "Melhor custo-benefício",
     features: config.prices.annual.features,
     limitations: [],
     buttonText: "Melhor Oferta",
@@ -94,7 +94,14 @@ const LandingPricing = () => {
               viewport={{ once: true }} 
               className="relative"
             >
-              <Card className={`h-full relative ${plan.popular ? 'border-accent shadow-2xl scale-105 bg-gradient-to-br from-card to-card/80' : 'hover:shadow-lg border-primary/20'} transition-all duration-300`} style={plan.popular ? {boxShadow: '0 0 40px rgba(99, 102, 241, 0.4)'} : {}}>
+              <Card className={`h-full relative ${plan.popular ? 'border-accent shadow-2xl scale-105 bg-gradient-to-br from-card to-card/80' : 'hover:shadow-lg border-primary/20'} transition-all duration-300`} style={plan.popular ? {boxShadow: '0 0 40px hsl(var(--shadow-color) / 0.4)'} : {}}>
+                {/* Destaque 7 dias gratis */}
+                <div className="absolute top-3 right-3 z-10">
+                  <div className="bg-gradient-to-r from-secondary via-accent to-primary text-white px-3 py-1 rounded-full text-xs font-semibold flex items-center gap-1 shadow-lg">
+                    <Sparkles className="h-3 w-3" />
+                    7 dias gratis
+                  </div>
+                </div>
                 {plan.popular && (
                   <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
                     <div className="bg-gradient-to-r from-primary to-accent text-white px-4 py-1 rounded-full text-sm font-medium flex items-center gap-1 shadow-lg">
@@ -117,14 +124,16 @@ const LandingPricing = () => {
                       </div>
                     )}
                   </div>
-                  <p className="text-muted-foreground mt-2">{plan.description}</p>
+                  {plan.description && (
+                    <p className="text-muted-foreground mt-2">{plan.description}</p>
+                  )}
                 </CardHeader>
                 
                 <CardContent className="pt-0">
                   <ul className="space-y-3 mb-8">
                     {plan.features.map((feature, idx) => (
                       <li key={idx} className="flex items-center gap-3">
-                        <Check className="h-5 w-5 text-cyan-400 flex-shrink-0" />
+                        <Check className="h-5 w-5 text-[#4ECDC4] flex-shrink-0" />
                         <span className="text-sm">{feature}</span>
                       </li>
                     ))}
