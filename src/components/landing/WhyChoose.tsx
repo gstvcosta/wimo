@@ -1,5 +1,5 @@
 import React from 'react';
-import { Zap, Shield, Brain, TrendingUp, Headphones, Sparkles } from 'lucide-react';
+import { Zap, Shield, Brain, Cpu, Headphones, Sparkles } from 'lucide-react';
 
 type Feature = {
   title: string;
@@ -9,7 +9,7 @@ type Feature = {
 
 const features: Feature[] = [
   {
-    title: 'Controle Instantâneo',
+    title: 'Dashboard Completo',
     description:
       'Gerencie todas suas finanças em tempo real com nossa interface intuitiva e poderosa.',
     Icon: Zap,
@@ -27,10 +27,10 @@ const features: Feature[] = [
     Icon: Brain,
   },
   {
-    title: 'Crescimento Garantido',
+    title: 'Automação Total',
     description:
-      'Estratégias comprovadas para aumentar sua renda e patrimônio de forma consistente.',
-    Icon: TrendingUp,
+      'Configure uma vez e deixe a plataforma trabalhar por você com inteligência artificial.',
+    Icon: Cpu,
   },
   {
     title: 'Suporte 24/7',
@@ -48,7 +48,7 @@ const features: Feature[] = [
 
 const WhyChoose: React.FC = () => {
   return (
-    <section className="py-20 w-full bg-background">
+    <section className="py-20 w-full bg-[#F1F5F9]">
       <div className="w-full px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">

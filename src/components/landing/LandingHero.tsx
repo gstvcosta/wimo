@@ -39,7 +39,7 @@ const LandingHero = () => {
   // resolvedName já definido via branding
 
   return (
-    <section className="dv-hero-gradient relative overflow-hidden w-full pt-10 md:pt-16 pb-16 md:pb-28">
+    <section className="relative overflow-hidden w-full pt-10 md:pt-16 pb-16 md:pb-28 bg-[#F1F5F9]">
       <div className="w-full px-4 md:px-8 lg:px-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 lg:gap-28 max-w-7xl mx-auto items-center">
           {/* Lado Esquerdo – Texto principal */}
@@ -55,11 +55,11 @@ const LandingHero = () => {
               ) : (
                 <BrandText name={productName} className="block" />
               )}
-              <span className="block text-foreground font-bold text-[50px] leading-[68px]">A forma inteligente de controlar seu dinheiro e sua agenda direto no WhatsApp.</span>
+              <span className="block text-foreground">controle seu dinheiro e sua agenda direto no WhatsApp</span>
             </h1>
 
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-xl mb-6 md:mb-8 leading-relaxed mx-auto md:mx-0">
-              Pare de sofrer com desorganização financeira e esquecer compromissos. A IA do Wimo cuida do seu dinheiro e lembra da sua agenda, basta enviar uma mensagem. O controle financeiro e pessoal mais simples que você já viu.
+              Pare de sofrer com desorganização financeira e esquecer compromissos. A IA do Wimo cuida do seu dinheiro e lembra da sua agenda, basta enviar uma mensagem.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center md:justify-start">

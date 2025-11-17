@@ -27,7 +27,7 @@ const testimonials = [
 
 const Testimonials: React.FC = () => {
   return (
-    <section className="py-20 w-full bg-background">
+    <section className="py-20 w-full bg-[#F8FAFC]">
       <div className="w-full px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">O que nossos clientes dizem</h2>

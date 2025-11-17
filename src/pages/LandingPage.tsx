@@ -29,7 +29,7 @@ const LandingPage = () => {
 
         {/* Apresentação do App */}
         <motion.section
-          className="w-full py-16"
+          className="w-full pt-12 pb-6 bg-[#F8FAFC]"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -48,12 +48,16 @@ const LandingPage = () => {
         <div className="w-full px-4">
           {/* Seção 01 - Registre tudo no WhatsApp */}
           <motion.div 
-            className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center max-w-7xl mx-auto mb-20 lg:mb-32 px-4"
+            className="relative w-full pt-6 sm:pt-8 lg:pt-10 pb-20 lg:pb-32 mb-0"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
             viewport={{ once: true }}
           >
+            {/* Fundo em largura total */}
+            <div className="absolute inset-y-0 left-1/2 -translate-x-1/2 w-screen bg-[#F8FAFC]"></div>
+
+            <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center max-w-7xl mx-auto px-4">
             <div className="text-center lg:text-left">
               <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-lg text-white font-bold text-lg mb-6 shadow-lg" style={{boxShadow: '0 0 20px rgba(99, 102, 241, 0.4)'}}>
                 01
@@ -65,7 +69,7 @@ const LandingPage = () => {
                 Registre receitas, despesas, compromissos e até agende transações direto pelo WhatsApp. Basta enviar uma mensagem para o assistente virtual, e ele organiza tudo automaticamente na sua conta.
               </p>
                 <div className="space-y-3 sm:space-y-4">
-                  <div className="flex items-start sm:items-center space-x-3 justify-center lg:justify-start">
+                  <div className="flex items-start sm:items-center space-x-3 justify-start">
                     <div className="h-6 w-6 rounded-full bg-secondary flex items-center justify-center flex-shrink-0">
                       <svg className="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -73,7 +77,7 @@ const LandingPage = () => {
                     </div>
  <span className="text-sm sm:text-base text-muted-foreground text-left">Lançamento instantâneo via texto, áudio ou imagem</span>
                   </div>
-                  <div className="flex items-start sm:items-center space-x-3 justify-center lg:justify-start">
+                  <div className="flex items-start sm:items-center space-x-3 justify-start">
                     <div className="h-6 w-6 rounded-full bg-secondary flex items-center justify-center flex-shrink-0 mt-0.5 sm:mt-0">
                       <svg className="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -81,7 +85,7 @@ const LandingPage = () => {
                     </div>
                     <span className="text-sm sm:text-base text-muted-foreground text-left">Categorização automática com inteligência artificial</span>
                   </div>
-                  <div className="flex items-start sm:items-center space-x-3 justify-center lg:justify-start">
+                  <div className="flex items-start sm:items-center space-x-3 justify-start">
                     <div className="h-6 w-6 rounded-full bg-secondary flex items-center justify-center flex-shrink-0 mt-0.5 sm:mt-0">
                       <svg className="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -97,16 +101,21 @@ const LandingPage = () => {
                 <WhatsAppAnimation />
               </div>
             </div>
+            </div>
           </motion.div>
 
           {/* Seção 02 - Painel profissional */}
           <motion.div 
-            className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center max-w-7xl mx-auto mb-20 lg:mb-32 bg-muted/10 py-8 sm:py-12 lg:py-16 px-4 rounded-3xl"
+            className="relative w-full py-8 sm:py-12 lg:py-16 mb-20 lg:mb-32"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
+            {/* Fundo em largura total */}
+            <div className="absolute inset-y-0 left-1/2 -translate-x-1/2 w-screen bg-[#F1F5F9]"></div>
+
+            <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center max-w-7xl mx-auto px-4">
             <div className="text-center lg:text-left order-2 lg:order-1">
               <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-lg text-white font-bold text-lg mb-6 shadow-lg" style={{boxShadow: '0 0 20px rgba(99, 102, 241, 0.4)'}}>
                 02
@@ -118,7 +127,7 @@ const LandingPage = () => {
               Acesse um painel completo no celular ou no computador com todas as suas informações financeiras, compromissos e agenda. E o melhor: sem perder tempo com cadastros! O assistente organiza tudo automaticamente via WhatsApp
               </p>
                 <div className="space-y-3 sm:space-y-4">
-                  <div className="flex items-start sm:items-center space-x-3 justify-center lg:justify-start">
+                  <div className="flex items-start sm:items-center space-x-3 justify-start">
                     <div className="h-6 w-6 rounded-full bg-secondary flex items-center justify-center flex-shrink-0">
                       <svg className="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -126,7 +135,7 @@ const LandingPage = () => {
                     </div>
                     <span className="text-sm sm:text-base text-muted-foreground text-left">Visualização clara do seu fluxo de caixa</span>
                   </div>
-                  <div className="flex items-start sm:items-center space-x-3 justify-center lg:justify-start">
+                  <div className="flex items-start sm:items-center space-x-3 justify-start">
                     <div className="h-6 w-6 rounded-full bg-secondary flex items-center justify-center flex-shrink-0 mt-0.5 sm:mt-0">
                       <svg className="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -134,7 +143,7 @@ const LandingPage = () => {
                     </div>
                     <span className="text-sm sm:text-base text-muted-foreground text-left">Sua agenda organizada automaticamente</span>
                   </div>
-                  <div className="flex items-start sm:items-center space-x-3 justify-center lg:justify-start">
+                  <div className="flex items-start sm:items-center space-x-3 justify-start">
                     <div className="h-6 w-6 rounded-full bg-secondary flex items-center justify-center flex-shrink-0 mt-0.5 sm:mt-0">
                       <svg className="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -154,11 +163,12 @@ const LandingPage = () => {
                 />
               </div>
             </div>
+            </div>
           </motion.div>
 
           {/* Seção 03 - Categorias personalizadas */}
           <motion.div 
-            className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center max-w-7xl mx-auto mb-20 lg:mb-32 px-4"
+            className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center max-w-7xl mx-auto mb-20 lg:mb-32 px-4 bg-[#F8FAFC] rounded-3xl"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
@@ -185,7 +195,7 @@ const LandingPage = () => {
                 O <BrandText name={resolvedName} /> já vem com as principais categorias configuradas, mas você pode criar novas a qualquer momento. Perfeito para separar despesas pessoais, empresariais ou qualquer outra necessidade específica.
               </p>
                 <div className="space-y-3 sm:space-y-4">
-                  <div className="flex items-start sm:items-center space-x-3 justify-center lg:justify-start">
+                  <div className="flex items-start sm:items-center space-x-3 justify-start">
                     <div className="h-6 w-6 rounded-full bg-secondary flex items-center justify-center flex-shrink-0">
                       <svg className="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -193,7 +203,7 @@ const LandingPage = () => {
                     </div>
                     <span className="text-sm sm:text-base text-muted-foreground text-left">Crie quantas categorias precisar</span>
                   </div>
-                  <div className="flex items-start sm:items-center space-x-3 justify-center lg:justify-start">
+                  <div className="flex items-start sm:items-center space-x-3 justify-start">
                     <div className="h-6 w-6 rounded-full bg-secondary flex items-center justify-center flex-shrink-0 mt-0.5 sm:mt-0">
                       <svg className="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -201,7 +211,7 @@ const LandingPage = () => {
                     </div>
                     <span className="text-sm sm:text-base text-muted-foreground text-left">Sistema inteligente de categorização</span>
                   </div>
-                  <div className="flex items-start sm:items-center space-x-3 justify-center lg:justify-start">
+                  <div className="flex items-start sm:items-center space-x-3 justify-start">
                     <div className="h-6 w-6 rounded-full bg-secondary flex items-center justify-center flex-shrink-0 mt-0.5 sm:mt-0">
                       <svg className="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -221,7 +231,7 @@ const LandingPage = () => {
         
         {/* Contato e Suporte - Discreto */}
         <motion.section
-          className="py-8 w-full"
+          className="py-8 w-full bg-[#F8FAFC]"
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
