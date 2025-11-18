@@ -98,16 +98,16 @@ const LandingHero = () => {
             />
 
             {/* Cards flutuantes */}
-            {/* Top-Right (pequeno) */}
+            {/* Top-Right (gasto do dia – sem título) */}
             <motion.div
               className="absolute block right-2 md:-right-2 lg:-right-6 xl:-right-10 top-3 md:top-8 lg:top-10 z-20"
               animate={floatAnimation}
               transition={floatTransition(0.2)}
             >
-              <Card className="rounded-lg shadow-lg ring-1 ring-accent/20 bg-background/80 backdrop-blur-xl border border-accent/30 w-[6rem] md:w-[9rem] lg:w-[11rem] xl:w-[12.5rem]" style={{boxShadow: '0 0 1.25rem hsl(var(--shadow-color) / 0.25)'}}>
-                <CardHeader className="pb-1 px-2 pt-2 md:pb-2 md:px-3 lg:px-4 xl:px-6 md:pt-3 lg:pt-4 xl:pt-6">
-                  <CardTitle className="text-[0.625rem] md:text-xs lg:text-sm leading-tight">Gastei R$ 45 no almoço hoje</CardTitle>
-                </CardHeader>
+              <Card className="rounded-lg shadow-lg ring-1 ring-accent/20 bg-background/80 backdrop-blur-xl border border-accent/30 w-[7rem] md:w-[10rem] lg:w-[12rem] xl:w-[13.75rem]" style={{boxShadow: '0 0 1.25rem hsl(var(--shadow-color) / 0.25)'}}>
+                <CardContent className="px-2 pt-2 pb-2 md:px-3 lg:px-4 xl:px-6 md:pt-3 lg:pt-4 xl:pt-6 md:pb-3 lg:pb-4 xl:pb-6">
+                  <div className="text-[0.625rem] md:text-xs lg:text-sm">Gastei R$ 45 no almoço hoje</div>
+                </CardContent>
               </Card>
             </motion.div>
 
@@ -160,6 +160,19 @@ const LandingHero = () => {
                 </CardHeader>
                 <CardContent className="pt-0 px-2 pb-2 md:px-3 lg:px-4 xl:px-6 md:pb-3 lg:pb-4 xl:pb-6">
                   <div className="text-[0.625rem] md:text-xs lg:text-sm">R$ 125,00 <span className="text-[0.5rem] md:text-[0.625rem] lg:text-[0.6875rem] text-muted-foreground">(total)</span></div>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            {/* Above Bottom-Right (evento – sem título) */}
+            <motion.div
+              className="absolute block right-2 md:-right-1 lg:-right-4 xl:-right-6 bottom-44 md:bottom-52 lg:bottom-60 xl:bottom-64 z-20"
+              animate={floatAnimation}
+              transition={floatTransition(0.6)}
+            >
+              <Card className="rounded-lg shadow-lg ring-1 ring-accent/20 bg-background/80 backdrop-blur-xl border border-accent/30 w-[7rem] md:w-[10rem] lg:w-[12rem] xl:w-[13.75rem]" style={{boxShadow: '0 0 1.25rem hsl(var(--shadow-color) / 0.25)'}}>
+                <CardContent className="px-2 pt-2 pb-2 md:px-3 lg:px-4 xl:px-6 md:pt-3 lg:pt-4 xl:pt-6 md:pb-3 lg:pb-4 xl:pb-6">
+                  <div className="text-[0.625rem] md:text-xs lg:text-sm">Marque um evento para as 20h</div>
                 </CardContent>
               </Card>
             </motion.div>

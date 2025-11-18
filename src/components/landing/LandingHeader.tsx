@@ -54,7 +54,7 @@ const LandingHeader = () => {
             className="hidden sm:inline-flex text-xs sm:text-sm md:text-base"
             size="sm"
           >
-            Estou pronto para economizar
+            Teste agora grátis
           </Button>
           <Button 
             asChild={false} 

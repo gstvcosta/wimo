@@ -95,11 +95,11 @@ const LandingPricing = () => {
               className="relative"
             >
               <Card className={`h-full relative ${plan.popular ? 'border-accent shadow-2xl scale-105 bg-gradient-to-br from-card to-card/80' : 'hover:shadow-lg border-primary/20'} transition-all duration-300`} style={plan.popular ? {boxShadow: '0 0 40px hsl(var(--shadow-color) / 0.4)'} : {}}>
-                {/* Destaque 7 dias gratis */}
+                {/* Destaque 7 dias grátis */}
                 <div className="absolute top-3 right-3 z-10">
                   <div className="bg-gradient-to-r from-secondary via-accent to-primary text-white px-3 py-1 rounded-full text-xs font-semibold flex items-center gap-1 shadow-lg">
                     <Sparkles className="h-3 w-3" />
-                    7 dias gratis
+                    7 dias grátis
                   </div>
                 </div>
                 {plan.popular && (
