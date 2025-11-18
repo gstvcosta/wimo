@@ -16,7 +16,7 @@ const LandingPage = () => {
   const resolvedName = import.meta.env.VITE_COMPANY_NAME || 'Poupe Já';
 
   return (
-    <div className="dv-theme min-h-screen w-full bg-[#F8FAFC] flex flex-col text-foreground">
+    <div className="dv-theme min-h-screen w-full bg-gradient-to-br from-background via-muted/20 to-background flex flex-col text-foreground">
       <LandingHeader />
 
       <motion.main
@@ -29,7 +29,7 @@ const LandingPage = () => {
 
         {/* Apresentação do App */}
         <motion.section
-          className="w-full pt-10 pb-6 bg-[#F8FAFC]"
+          className="w-full pt-12 pb-6 bg-[#F8FAFC]"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -48,7 +48,7 @@ const LandingPage = () => {
         <div className="w-full px-4">
           {/* Seção 01 - Registre tudo no WhatsApp */}
           <motion.div 
-            className="relative w-full pt-8 sm:pt-10 lg:pt-12 pb-20 lg:pb-28 mb-0"
+            className="relative w-full pt-6 sm:pt-8 lg:pt-10 pb-20 lg:pb-32 mb-0"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
@@ -106,7 +106,7 @@ const LandingPage = () => {
 
           {/* Seção 02 - Painel profissional */}
           <motion.div 
-            className="relative w-full pt-8 sm:pt-10 lg:pt-12 pb-20 lg:pb-28 mb-0"
+            className="relative w-full py-8 sm:py-12 lg:py-16 mb-20 lg:mb-32"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -168,16 +168,12 @@ const LandingPage = () => {
 
           {/* Seção 03 - Categorias personalizadas */}
           <motion.div 
-            className="relative w-full pt-8 sm:pt-10 lg:pt-12 pb-20 lg:pb-28 mb-0"
+            className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center max-w-7xl mx-auto mb-20 lg:mb-32 px-4 bg-[#F8FAFC] rounded-3xl"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
             viewport={{ once: true }}
           >
-            {/* Fundo em largura total */}
-            <div className="absolute inset-y-0 left-1/2 -translate-x-1/2 w-screen bg-[#F8FAFC]"></div>
-
-            <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center max-w-7xl mx-auto px-4">
             <div className="flex justify-center order-first lg:order-first">
               <div className="w-full max-w-md sm:max-w-lg lg:max-w-2xl xl:max-w-3xl">
                 <img 
