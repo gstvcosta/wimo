@@ -127,18 +127,18 @@ const ShareButtons: React.FC<ShareButtonsProps> = ({
   // Default variant
   return (
     <div className={`flex flex-col sm:flex-row gap-3 items-center justify-center text-center w-full px-2 ${className}`}>
-      <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground mb-2 sm:mb-0 flex-wrap justify-center">
+      <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground mb-2 sm:mb-0 sm:flex-nowrap">
         <Share2 className="h-4 w-4" />
         <span>Compartilhe esta página:</span>
       </div>
       
-      <div className="flex flex-wrap justify-center gap-2 w-full">
+      <div className="flex gap-2 flex-wrap justify-center w-full sm:flex-nowrap sm:w-auto">
         {showWhatsApp && (
           <Button
             variant="outline"
             size="sm"
             onClick={handleWhatsAppShare}
-            className="flex items-center gap-2 h-8 text-xs sm:text-sm px-2"
+            className="flex items-center gap-2 h-8 px-2 text-xs sm:h-9 sm:px-3 sm:text-sm"
           >
             <MessageCircle className="h-4 w-4 text-green-500" />
             WhatsApp
@@ -151,7 +151,7 @@ const ShareButtons: React.FC<ShareButtonsProps> = ({
               variant="outline"
               size="sm"
               onClick={() => handleSocialShare('facebook')}
-              className="flex items-center gap-2 h-8 text-xs sm:text-sm px-2"
+              className="flex items-center gap-2 h-8 px-2 text-xs sm:h-9 sm:px-3 sm:text-sm"
             >
               <Facebook className="h-4 w-4 text-blue-500" />
               Facebook
@@ -161,7 +161,7 @@ const ShareButtons: React.FC<ShareButtonsProps> = ({
               variant="outline"
               size="sm"
               onClick={() => handleSocialShare('twitter')}
-              className="flex items-center gap-2 h-8 text-xs sm:text-sm px-2"
+              className="flex items-center gap-2 h-8 px-2 text-xs sm:h-9 sm:px-3 sm:text-sm"
             >
               <Twitter className="h-4 w-4 text-sky-500" />
               Twitter
@@ -171,7 +171,7 @@ const ShareButtons: React.FC<ShareButtonsProps> = ({
               variant="outline"
               size="sm"
               onClick={() => handleSocialShare('linkedin')}
-              className="flex items-center gap-2 h-8 text-xs sm:text-sm px-2"
+              className="flex items-center gap-2 h-8 px-2 text-xs sm:h-9 sm:px-3 sm:text-sm"
             >
               <Linkedin className="h-4 w-4 text-blue-600" />
               LinkedIn

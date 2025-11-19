@@ -77,7 +77,7 @@ const LandingBenefits = () => {
     };
 
     return (
-        <section id="recursos" className="py-24 bg-muted/20 dark:bg-muted/20 w-full">
+        <section id="recursos" className="py-12 sm:py-16 lg:py-20 bg-muted/20 dark:bg-muted/20 w-full">
             <div className="w-full px-4">
                 {/* Header */}
                 <motion.div 

@@ -20,7 +20,7 @@ const LandingCTA = () => {
   }, []);
 
   return (
-    <section className="py-12 sm:py-16 md:py-20 w-full bg-[#F8FAFC]">
+    <section className="py-12 sm:py-16 lg:py-20 w-full bg-[#F8FAFC]">
       <div className="w-full px-4">
         <motion.div
           className="bg-gradient-to-r from-primary via-accent to-secondary rounded-3xl p-6 sm:p-8 md:p-12 lg:p-16 text-center text-white max-w-6xl mx-auto shadow-2xl relative overflow-hidden" style={{ boxShadow: '0px 20px 60px #4ECDC4' }}

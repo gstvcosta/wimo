@@ -29,7 +29,7 @@ const LandingHeader = () => {
       transition={{ duration: 0.5 }}
       style={{boxShadow: '0 4px 20px rgba(0, 0, 0, 0.3)'}}
     >
-      <div className="w-full px-4 py-4 flex items-center justify-between max-w-7xl mx-auto">
+      <div className="w-full px-4 py-3 sm:py-4 flex items-center justify-between max-w-7xl mx-auto">
         <div className="flex items-center gap-2">
           {logoUrl && logoUrl.trim() !== '' && (
             <img 

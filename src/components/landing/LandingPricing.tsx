@@ -11,7 +11,7 @@ const LandingPricing = () => {
 
   if (isLoading) {
     return (
-      <section className="py-20 w-full bg-[#F1F5F9]" id="planos">
+      <section className="py-12 sm:py-16 lg:py-20 w-full bg-[#F1F5F9]" id="planos">
         <div className="w-full px-4">
           <div className="flex items-center justify-center">
             <Loader2 className="h-8 w-8 animate-spin" />
@@ -23,7 +23,7 @@ const LandingPricing = () => {
 
   if (error || !config) {
     return (
-      <section className="py-20 w-full bg-[#F1F5F9]" id="planos">
+      <section className="py-12 sm:py-16 lg:py-20 w-full bg-[#F1F5F9]" id="planos">
         <div className="w-full px-4">
           <div className="text-center text-red-600">
             Erro ao carregar configurações dos planos
@@ -61,7 +61,7 @@ const LandingPricing = () => {
   }];
 
   return (
-    <section className="py-24 w-full bg-[#F1F5F9]" id="planos">
+    <section className="py-12 sm:py-16 lg:py-20 w-full bg-[#F1F5F9]" id="planos">
       <div className="w-full px-4">
         <motion.div 
           className="text-center mb-16" 

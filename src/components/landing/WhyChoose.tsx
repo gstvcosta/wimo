@@ -48,7 +48,7 @@ const features: Feature[] = [
 
 const WhyChoose: React.FC = () => {
   return (
-    <section className="py-20 w-full bg-[#F1F5F9]">
+    <section className="py-12 sm:py-16 lg:py-20 w-full bg-[#F1F5F9]">
       <div className="w-full px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">

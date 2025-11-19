@@ -29,7 +29,7 @@ const LandingPage = () => {
 
         {/* Apresentação do App */}
         <motion.section
-          className="w-full pt-12 pb-6 bg-[#F8FAFC]"
+          className="w-full py-12 sm:py-16 lg:py-20 bg-[#F8FAFC]"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -48,7 +48,7 @@ const LandingPage = () => {
         <div className="w-full px-4">
           {/* Seção 01 - Registre tudo no WhatsApp */}
           <motion.div 
-            className="relative w-full pt-6 sm:pt-8 lg:pt-10 pb-20 lg:pb-32 mb-0"
+            className="relative w-full py-12 sm:py-16 lg:py-20"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
@@ -106,7 +106,7 @@ const LandingPage = () => {
 
           {/* Seção 02 - Painel profissional */}
           <motion.div 
-            className="relative w-full py-8 sm:py-12 lg:py-16 mb-20 lg:mb-32"
+            className="relative w-full py-12 sm:py-16 lg:py-20"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -168,7 +168,7 @@ const LandingPage = () => {
 
           {/* Seção 03 - Categorias personalizadas */}
           <motion.div 
-            className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center max-w-7xl mx-auto mb-20 lg:mb-32 px-4 bg-[#F8FAFC] rounded-3xl"
+            className="py-12 sm:py-16 lg:py-20 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center max-w-7xl mx-auto px-4 bg-[#F8FAFC] rounded-3xl"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
@@ -231,7 +231,7 @@ const LandingPage = () => {
         
         {/* Contato e Suporte - Discreto */}
         <motion.section
-          className="py-8 w-full bg-[#F8FAFC]"
+          className="py-12 sm:py-16 lg:py-20 w-full bg-[#F8FAFC]"
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
@@ -270,7 +270,7 @@ const LandingPage = () => {
       </motion.main>
       
       {/* Footer */}
-        <footer className="bg-card/30 border-t py-8 w-full">
+        <footer className="bg-card/30 border-t py-10 sm:py-12 lg:py-16 w-full">
         <div className="w-full px-4">
           <div className="max-w-6xl mx-auto">
             <ShareButtons />
