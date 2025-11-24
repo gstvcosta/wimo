@@ -75,7 +75,7 @@ const LandingPage = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
- <span className="text-sm sm:text-base text-muted-foreground text-left">Lançamento instantâneo via texto, áudio ou imagem</span>
+                    <span className="text-sm sm:text-base text-muted-foreground text-left">Dê adeus as planilhas</span>
                   </div>
                   <div className="flex items-start sm:items-center space-x-3 justify-start">
                     <div className="h-6 w-6 rounded-full bg-secondary flex items-center justify-center flex-shrink-0 mt-0.5 sm:mt-0">
@@ -83,7 +83,7 @@ const LandingPage = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    <span className="text-sm sm:text-base text-muted-foreground text-left">Categorização automática com inteligência artificial</span>
+                    <span className="text-sm sm:text-base text-muted-foreground text-left">Registre tudo em segundos</span>
                   </div>
                   <div className="flex items-start sm:items-center space-x-3 justify-start">
                     <div className="h-6 w-6 rounded-full bg-secondary flex items-center justify-center flex-shrink-0 mt-0.5 sm:mt-0">
@@ -91,7 +91,7 @@ const LandingPage = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    <span className="text-sm sm:text-base text-muted-foreground text-left">Máxima praticidade no dia a dia</span>
+                    <span className="text-sm sm:text-base text-muted-foreground text-left">Mensagens via texto, áudio e imagem</span>
                   </div>
                 </div>
             </div>
@@ -124,7 +124,7 @@ const LandingPage = () => {
                 Dashboard completo e intuitivo
               </h2>
               <p className="text-base sm:text-lg text-muted-foreground mb-6 sm:mb-8 leading-relaxed">
-              Acesse um painel completo no celular ou no computador com todas as suas informações financeiras, compromissos e agenda. E o melhor: sem perder tempo com cadastros! O assistente organiza tudo automaticamente via WhatsApp
+              Tenha clareza real sobre sua vida financeira, veja para onde vai seu dinheiro e tome decisões melhores. Acesse um painel completo no celular ou no computador com todas as suas informações financeiras e agenda de compromissos
               </p>
                 <div className="space-y-3 sm:space-y-4">
                   <div className="flex items-start sm:items-center space-x-3 justify-start">
@@ -133,7 +133,7 @@ const LandingPage = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    <span className="text-sm sm:text-base text-muted-foreground text-left">Visualização clara do seu fluxo de caixa</span>
+                    <span className="text-sm sm:text-base text-muted-foreground text-left">Clareza rápida dos gastos</span>
                   </div>
                   <div className="flex items-start sm:items-center space-x-3 justify-start">
                     <div className="h-6 w-6 rounded-full bg-secondary flex items-center justify-center flex-shrink-0 mt-0.5 sm:mt-0">
@@ -141,7 +141,7 @@ const LandingPage = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    <span className="text-sm sm:text-base text-muted-foreground text-left">Sua agenda organizada automaticamente</span>
+                    <span className="text-sm sm:text-base text-muted-foreground text-left">Finanças + agenda no mesmo lugar</span>
                   </div>
                   <div className="flex items-start sm:items-center space-x-3 justify-start">
                     <div className="h-6 w-6 rounded-full bg-secondary flex items-center justify-center flex-shrink-0 mt-0.5 sm:mt-0">
@@ -149,7 +149,7 @@ const LandingPage = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    <span className="text-sm sm:text-base text-muted-foreground text-left">Interface simples e acessível</span>
+                    <span className="text-sm sm:text-base text-muted-foreground text-left">Atualização automática pelo WhatsApp</span>
                   </div>
                 </div>
             </div>
@@ -275,7 +275,7 @@ const LandingPage = () => {
           <div className="max-w-6xl mx-auto">
             <ShareButtons />
             <div className="text-center text-muted-foreground mt-6">
- <p>&copy; 2025 <BrandText name={resolvedName} />. Todos os direitos reservados. Simplificando o seu controle financeiro e sua agenda de compromissos.</p>
+ <p>&copy; 2025 <BrandText name={resolvedName} />. Todos os direitos reservados. Simplificando seu controle financeiro e sua agenda de compromissos.</p>
             </div>
           </div>
         </div>

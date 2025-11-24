@@ -38,7 +38,7 @@ const LandingPricing = () => {
     price: config.prices.monthly.displayPrice,
     period: "/mês",
     description: "",
-    features: config.prices.monthly.features,
+    features: [...config.prices.monthly.features, "Cancelamento em 2 cliques"],
     limitations: [],
     buttonText: "Assinar Agora",
     buttonVariant: "default" as const,
@@ -51,10 +51,10 @@ const LandingPricing = () => {
     originalPrice: config.prices.annual.displayOriginalPrice,
     savings: config.prices.annual.displaySavings,
     monthlyEquivalent: config.prices.annual.monthlyEquivalent,
-    description: "Melhor custo-benefício",
-    features: config.prices.annual.features,
+    description: "",
+    features: [...config.prices.annual.features, "Cancelamento em 2 cliques"],
     limitations: [],
-    buttonText: "Melhor Oferta",
+    buttonText: "Economizar 34%",
     buttonVariant: "default" as const,
     popular: true,
     linkTo: config.prices.annual.linkTo
@@ -74,7 +74,7 @@ const LandingPricing = () => {
             Selecione seu plano perfeito
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Revolucione sua gestão financeira com planos pensados para você
+            Escolha seu plano e comece a organizar sua vida em menos de 1 minuto
           </p>
         </motion.div>
         

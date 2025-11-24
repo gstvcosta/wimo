@@ -74,9 +74,9 @@ const LandingHero = () => {
                 size="lg" 
                 variant="outline" 
                 className="text-sm sm:text-base px-6 sm:px-8 py-4 sm:py-5"
-                onClick={handleLoginClick}
+                onClick={scrollToPlans}
               >
-                Já tenho conta
+                7 dias grátis 
               </Button>
             </div>
 

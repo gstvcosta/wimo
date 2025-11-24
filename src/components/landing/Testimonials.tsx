@@ -4,23 +4,23 @@ import { Quote, Star } from 'lucide-react';
 const testimonials = [
   {
     quote:
-      'Revolucionou completamente como gerencio minhas finanças. A IA me ajuda a tomar decisões mais inteligentes todos os dias.',
-    name: 'Maria Silva',
-    role: 'Empresária',
+      'Eu vivia esquecendo vencimentos e compromissos do trabalho. Agora o Wimo me lembra tudo no WhatsApp. Minha rotina ficou infinitamente mais organizada.',
+    name: 'Juliana Moreira',
+    role: '32 anos, Analista de RH',
     rating: 5,
   },
   {
     quote:
-      'Os insights são incríveis! Consegui aumentar meus rendimentos em 40% no primeiro ano usando a plataforma.',
-    name: 'João Santos',
-    role: 'Investidor',
+      'Eu nunca tive paciência para planilhas. Com Wimo eu só mando mensagem e tudo fica organizado. No primeiro mês consegui economizar R$ 280 só vendo para onde meu dinheiro estava indo.',
+    name: 'Carlos Freitas',
+    role: '41 anos, Autônomo',
     rating: 5,
   },
   {
     quote:
-      'Finalmente tenho controle total das minhas finanças. A interface é intuitiva e os relatórios são muito detalhados.',
-    name: 'Ana Costa',
-    role: 'Freelancer',
+      'O que eu mais gostei foi a automatização. Mando a foto da nota, e a IA já registra tudo. Economizo tempo todo dia.',
+    name: 'Roberto Cunha',
+    role: '39 anos, Professor',
     rating: 5,
   },
 ];

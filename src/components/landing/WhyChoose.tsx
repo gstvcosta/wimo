@@ -17,7 +17,7 @@ const features: Feature[] = [
   {
     title: 'Segurança Total',
     description:
-      'Seus dados protegidos com criptografia de nível bancário e autenticação avançada.',
+      'Seus dados estão seguros, com criptografia avançada e total privacidade.',
     Icon: Shield,
   },
   {
@@ -33,7 +33,7 @@ const features: Feature[] = [
     Icon: Cpu,
   },
   {
-    title: 'Suporte 24/7',
+    title: 'Suporte',
     description:
       'Nossa equipe especializada está sempre disponível para ajudar você a prosperar.',
     Icon: Headphones,

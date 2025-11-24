@@ -31,11 +31,12 @@ const LandingCTA = () => {
           style={{boxShadow: '0 20px 60px #4ECDC4'}}
         >
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6">
-          Pronto para transformar suas finanças?
+          Pronto para organizar seu dinheiro e sua agenda?
           </h2>
           
           <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 max-w-3xl mx-auto opacity-95 leading-relaxed px-2">
-          Revolucione sua gestão financeira agora. Com o <BrandText name={resolvedName} className="font-bold bg-white/20 px-2 py-1 rounded-lg border border-white/40" />, você tem domínio completo do seu dinheiro de maneira prática e eficiente.
+          Começe grátis por 7 dias.<br />
+          A Inteligência Artificial do <BrandText name={resolvedName} className="font-bold bg-white/20 px-2 py-1 rounded-lg border border-white/40" /> cuida de resto.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
