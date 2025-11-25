@@ -30,8 +30,8 @@ const Testimonials: React.FC = () => {
     <section className="py-12 sm:py-16 lg:py-20 w-full bg-[#F8FAFC]">
       <div className="w-full px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground">O que nossos clientes dizem</h2>
-          <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">O que nossos clientes dizem</h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Histórias reais de pessoas que transformaram suas vidas financeiras
           </p>
         </div>

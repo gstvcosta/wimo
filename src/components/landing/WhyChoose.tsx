@@ -51,10 +51,10 @@ const WhyChoose: React.FC = () => {
     <section className="py-12 sm:py-16 lg:py-20 w-full bg-[#F1F5F9]">
       <div className="w-full px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             Por que escolher o <span className="text-[#004461]">Wimo</span>?
           </h2>
-          <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             A solução mais completa e intuitiva para transformar sua vida financeira
           </p>
         </div>

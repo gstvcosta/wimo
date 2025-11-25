@@ -124,7 +124,7 @@ const LandingPage = () => {
                 Dashboard completo e intuitivo
               </h2>
               <p className="text-base sm:text-lg text-muted-foreground mb-6 sm:mb-8 leading-relaxed">
-              Tenha clareza real sobre sua vida financeira, veja para onde vai seu dinheiro e tome decisões melhores. Acesse um painel completo no celular ou no computador com todas as suas informações financeiras e agenda de compromissos
+              Tenha clareza real sobre sua vida financeira, veja para onde vai seu dinheiro e tome decisões melhores. Acesse um painel completo no celular ou no computador com todas as suas informações financeiras e agenda de compromissos.
               </p>
                 <div className="space-y-3 sm:space-y-4">
                   <div className="flex items-start sm:items-center space-x-3 justify-start">

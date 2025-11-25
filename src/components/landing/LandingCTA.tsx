@@ -30,7 +30,7 @@ const LandingCTA = () => {
           viewport={{ once: true }}
           style={{boxShadow: '0 20px 60px #4ECDC4'}}
         >
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
           Pronto para organizar seu dinheiro e sua agenda?
           </h2>
           

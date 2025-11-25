@@ -45,6 +45,9 @@ const LandingPricing = () => {
     popular: false,
     linkTo: config.prices.monthly.linkTo
   }, {
+    // Garantir que o Ebook fique por último na lista
+    // Remove o ebook das features originais, adiciona "Cancelamento" e re-insere o ebook no final
+    constEbookPlaceholder: undefined,
     name: "Anual",
     price: config.prices.annual.displayPrice,
     period: "/ano",
@@ -52,7 +55,13 @@ const LandingPricing = () => {
     savings: config.prices.annual.displaySavings,
     monthlyEquivalent: config.prices.annual.monthlyEquivalent,
     description: "",
-    features: [...config.prices.annual.features, "Cancelamento em 2 cliques"],
+    features: [
+      ...config.prices.annual.features.filter(
+        (f) => f !== "Ebook Dê os Primeiros Passos Para a Riqueza"
+      ),
+      "Cancelamento em 2 cliques",
+      "Ebook Dê os Primeiros Passos Para a Riqueza",
+    ],
     limitations: [],
     buttonText: "Economizar 34%",
     buttonVariant: "default" as const,
