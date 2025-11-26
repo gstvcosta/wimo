@@ -63,7 +63,7 @@ const LandingPricing = () => {
       "Ebook Dê os Primeiros Passos Para a Riqueza",
     ],
     limitations: [],
-    buttonText: "Economizar 34%",
+    buttonText: "Economizar 33%",
     buttonVariant: "default" as const,
     popular: true,
     linkTo: config.prices.annual.linkTo
@@ -140,12 +140,15 @@ const LandingPricing = () => {
                 
                 <CardContent className="pt-0">
                   <ul className="space-y-3 mb-8">
-                    {plan.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-center gap-3">
-                        <Check className="h-5 w-5 text-[#4ECDC4] flex-shrink-0" />
-                        <span className="text-sm">{feature}</span>
-                      </li>
-                    ))}
+                    {plan.features.map((feature, idx) => {
+                      const isEbook = feature === "Ebook Dê os Primeiros Passos Para a Riqueza";
+                      return (
+                        <li key={idx} className="flex items-center gap-3">
+                          <Check className="h-5 w-5 text-[#4ECDC4] flex-shrink-0" />
+                          <span className={`text-sm ${isEbook ? 'font-bold text-[#4ECDC4]' : ''}`}>{feature}</span>
+                        </li>
+                      );
+                    })}
                     {plan.limitations.map((limitation, idx) => (
                       <li key={idx} className="flex items-center gap-3 text-muted-foreground">
                         <span className="text-sm">{limitation}</span>
