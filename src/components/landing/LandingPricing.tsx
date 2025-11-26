@@ -157,7 +157,7 @@ const LandingPricing = () => {
                   </ul>
                   
                   <Button 
-                    className={`w-full ${plan.popular ? 'bg-gradient-to-r from-primary to-accent hover:opacity-90' : ''} transition-all hover:scale-[1.02]`}
+                    className={`w-full ${plan.popular ? 'bg-gradient-to-r from-primary to-accent hover:opacity-90' : ''} transform-gpu transition-colors hover:shadow-md`}
                     variant={plan.buttonVariant} 
                     size="lg"
                     onClick={() => window.location.href = plan.linkTo}
