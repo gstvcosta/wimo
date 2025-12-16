@@ -95,11 +95,11 @@ export const WhatsAppAnimation = () => {
         <div className="bg-[#ECE5DD] rounded-[32px] overflow-hidden shadow-inner">
           {/* WhatsApp Header */}
           <div className="bg-[#075E54] px-4 py-3 flex items-center gap-3">
-            <div className="w-8 h-8 rounded-full bg-gray-300 flex items-center justify-center">
-              <img src="/images/favicon.png" alt="Wimo" className="w-4 h-4" />
+            <div className="w-8 h-8 rounded-full overflow-hidden bg-white">
+              <img src="/images/favicon.png" alt="Wivio" className="w-full h-full object-cover scale-[1.05]" />
             </div>
             <div className="flex-1">
-              <h3 className="text-white text-sm font-semibold">Wimo</h3>
+              <h3 className="text-white text-sm font-semibold">Wivio</h3>
               <p className="text-white/70 text-xs">online</p>
             </div>
           </div>

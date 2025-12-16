@@ -50,8 +50,8 @@ const LandingHero = () => {
             className="order-2 md:order-1 text-center md:text-left"
           >
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-4 md:mb-6" style={{letterSpacing: '-0.02em', lineHeight: '1.3'}}>
-              {productName.trim().toLowerCase() === 'wimo' ? (
-                <span className="text-[#004461] block">Wimo,</span>
+              {productName.trim().toLowerCase() === 'wivio' ? (
+                <span className="text-[#004461] block">Wivio,</span>
               ) : (
                 <BrandText name={productName} className="block" />
               )}
@@ -59,7 +59,7 @@ const LandingHero = () => {
             </h1>
 
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-xl mb-6 md:mb-8 leading-relaxed mx-auto md:mx-0">
-              Pare de sofrer com desorganização financeira e esquecer compromissos. A IA do Wimo cuida do seu dinheiro e lembra da sua agenda, basta enviar uma mensagem.
+              Pare de sofrer com desorganização financeira e esquecer compromissos. A IA do Wivio cuida do seu dinheiro e lembra da sua agenda, basta enviar uma mensagem.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center md:justify-start">

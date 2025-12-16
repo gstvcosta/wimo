@@ -4,14 +4,14 @@ import { Quote, Star } from 'lucide-react';
 const testimonials = [
   {
     quote:
-      'Eu vivia esquecendo vencimentos e compromissos do trabalho. Agora o Wimo me lembra tudo no WhatsApp. Minha rotina ficou infinitamente mais organizada.',
+      'Eu vivia esquecendo vencimentos e compromissos do trabalho. Agora o Wivio me lembra tudo no WhatsApp. Minha rotina ficou infinitamente mais organizada.',
     name: 'Juliana Moreira',
     role: '32 anos, Analista de RH',
     rating: 5,
   },
   {
     quote:
-      'Eu nunca tive paciência para planilhas. Com Wimo eu só mando mensagem e tudo fica organizado. No primeiro mês consegui economizar R$ 280 só vendo para onde meu dinheiro estava indo.',
+      'Eu nunca tive paciência para planilhas. Com Wivio eu só mando mensagem e tudo fica organizado. No primeiro mês consegui economizar R$ 280 só vendo para onde meu dinheiro estava indo.',
     name: 'Carlos Freitas',
     role: '41 anos, Autônomo',
     rating: 5,

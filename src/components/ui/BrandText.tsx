@@ -7,8 +7,8 @@ interface BrandTextProps {
 }
 
 export const BrandText: React.FC<BrandTextProps> = ({ name = "", className }) => {
-  const isWimo = name.trim().toLowerCase() === "wimo";
-  const baseClass = isWimo ? "text-[#004461]" : "dv-brand-text";
+  const isWivio = name.trim().toLowerCase() === "wivio";
+  const baseClass = isWivio ? "text-[#004461]" : "dv-brand-text";
   return <span className={cn(baseClass, className)}>{name}</span>;
 };
 
